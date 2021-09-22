@@ -1,0 +1,208 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #0D2840;
+}
+
+.background-blue{
+    background-color: #0D2840;
+    height: 1120px;
+    width: 940px;
+    float: right;
+    
+}
+
+.background-beige{
+    background-color: #efeee8;
+    height: 650px;
+    width: 500px;
+    position: absolute;
+    margin-top: 500px;
+}
+
+.All_In_Pan{
+    width: 500px;
+    position: relative;
+}
+
+.Recipe_Title{
+    position: relative;
+    float: top;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 840px;
+}
+
+.text_body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    position: relative;
+    float: right;
+    margin-left: 50px;
+    margin-top: 25px;
+    padding-right: 60px;
+    font-size: 14px;
+    color: #efeee8;
+}
+
+.text_body_dark{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    position: relative;
+    float: right;
+    margin-left: 45px;
+    margin-top: 35px;
+    padding-right: 60px;
+    font-size: 16px;
+    color: #0D2840;
+}
+
+.Woodstock-Market{
+    color: #e68040;
+}
+
+.white_line{
+    background-color: white;
+    height: 2px;
+    width: 840px;
+    position: relative;
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.subheading{
+    font-family: 'Industry-Inc-Base', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    position: relative;
+    color: #7f9153;
+    margin-left: 50px;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+
+.subheading_beige{
+    font-family: 'Industry-Inc-Base', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    position: relative;
+    color: #7f9153;
+    margin-left: 45px;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+
+ol {
+    list-style: none;
+    counter-reset: item;
+    text-indent: -30px;
+    margin-left: 35px;
+  }
+  li {
+    counter-increment: item;
+    margin-bottom: 5px;
+    margin-left: -40px;
+  }
+  li:before {
+    margin-right: 10px;
+    text-indent: 0px;
+    content: counter(item);
+    border-radius: 100%;
+    color: white;
+    background-color: #e68040;
+    width: 20px;
+    height: 18px;
+    border-radius: 2px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.container {
+    display: block;
+    position: relative;
+    float: left;
+    padding-left: 35px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    color: #0D2840; 
+    
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #9e9e9e;
+    border-radius: 4px;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #c2c2c2;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #e68040;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.ingredients_list{
+    height: 300px;
+    width: 400px;
+    float: left;
+    margin-left: 45px;
+    margin-top: 12px;
+}
+
+.Mushrooms_Peppers{
+    position: relative;
+    width: 500px;
+    height: 370px;
+    float: left;
+    margin-top: 21px;
+}
+
+br {
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: 20px; /* change this to whatever height you want it */
+}
